@@ -1,4 +1,6 @@
-def factorial(n):
+from collections.abc import Callable
+
+def factorial(n: int | float) -> int | float:
     if n == 0:
         return 1
     elif n == float(n):
