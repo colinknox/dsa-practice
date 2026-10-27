@@ -9,5 +9,3 @@ def factorial(n: int) -> int:
         raise ValueError("Input needs to be a nonnegative integer.")
     else:
         return n * factorial(n - 1)
-
-factorial(2.5)
