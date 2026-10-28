@@ -11,9 +11,3 @@ def bubble_sort(nums):
         end -= 1
 
     return nums
-
-
-
-print(bubble_sort([5, 4, 3, 2, 1]))
-print(bubble_sort([10, 8, 6, 4, 2]))
-print(bubble_sort([9, 7, 5, 3, 1]))
