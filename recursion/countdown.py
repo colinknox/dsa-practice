@@ -3,7 +3,3 @@ def countdown(n):
         return
     print(n)
     countdown(n - 1)    
-
-countdown(5)
-countdown(3)
-countdown(0)
