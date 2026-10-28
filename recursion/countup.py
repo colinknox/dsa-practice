@@ -3,7 +3,3 @@ def countup(n):
         return
     countup(n - 1)
     print(n)
-
-countup(5)
-countup(3)
-countup(0)
