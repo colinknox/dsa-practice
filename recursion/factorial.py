@@ -1,11 +1,14 @@
-from collections.abc import Callable
-
-def factorial(n: int) -> int:
-    if n == 0:
+def factorial(n):
+    if n < 0:
+        raise ValueError("Input cannot be a negative number.")
+    elif n == 0: 
         return 1
-    elif n == float(n):
-        raise ValueError("Input cannot have a decimal.")
-    elif n < 0:
-        raise ValueError("Input needs to be a nonnegative integer.")
     else:
         return n * factorial(n - 1)
+
+
+
+print(factorial(5))
+print(factorial(3))
+print(factorial(0))
+print(factorial(-1))
