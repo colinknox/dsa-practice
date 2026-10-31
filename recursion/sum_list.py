@@ -1,4 +1,4 @@
-def sum_list(nums):
+def sum_list(nums: list[int]) -> list[int]:
     if len(nums) == 0:
         return 0
     return nums[0] + sum_list(nums[1:])
