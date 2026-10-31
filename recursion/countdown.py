@@ -1,4 +1,4 @@
-def countdown(n):
+def countdown(n: int) -> int | None:
     if n <= 0:
         return
     print(n)
