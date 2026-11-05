@@ -1,4 +1,4 @@
-def countup(n: int) -> int | None:
+def countup(n):
     if n <= 0:
         return
     countup(n - 1)
@@ -6,5 +6,3 @@ def countup(n: int) -> int | None:
 
 
 countup(5)
-countup(3)
-countup(0)
