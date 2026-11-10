@@ -3,9 +3,11 @@ def sum_list(nums):
         return 0
     return nums[0] + sum_list(nums[1:])
 
-assert sum_list([5, 4, 3, 2, 1]) == 15
-assert sum_list([2]) == 2
-assert sum_list([2, 4, 6, 8, 10]) == 30
+
 assert sum_list([1, 2, 3]) == 6
+assert sum_list([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]) == 55
+assert sum_list([100, 50, 25]) == 175
+assert sum_list([11, 22, 33]) == 66
+assert sum_list([3]) == 3
 assert sum_list([]) == 0
-print("Sum List tests successful!")
+print("Sum list function successful.")
