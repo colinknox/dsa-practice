@@ -1,14 +1,15 @@
-def factorial(n: int) -> int:
-    if n < 0:
-        raise ValueError("Input cannot be a negative number.")
-    elif n == 0: 
+def factorial(num):
+    if num < 0:
+        raise ValueError("Input cannot be a negative number. Must be 0 or above.")
+    elif num == 0:
         return 1
     else:
-        return n * factorial(n - 1)
+        return num * factorial(num - 1)
 
 
 assert factorial(5) == 120
-assert factorial(3) == 6
+assert factorial(4) == 24
+assert factorial(2) == 2
 assert factorial(1) == 1
-assert factorial(-2) == 1
-print("Factorial runs beautifully!")
+assert factorial(0) == 1
+print("Factorial function tests successful.")
