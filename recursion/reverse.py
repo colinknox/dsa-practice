@@ -1,11 +1,11 @@
-def reverse(string):
-    if len(string) == 0:
+def reverse(word):
+    if len(word) == 0:
         return ""
-    return reverse(string[1:]) + string[0]
+    return reverse(word[1:]) + word[0]
 
-assert reverse("sony") == "ynos"
-assert reverse("department") == "tnemtraped"
-assert reverse("racecar") == "racecar"
-assert reverse("n") == "n"
+assert reverse("repair") == "riaper"
+assert reverse("courier") == "reiruoc"
+assert reverse("gusto") == "otsug"
+assert reverse("i") == "i"
 assert reverse("") == ""
-print("Reverse function test successful.")
+print("Reverse test successful.")

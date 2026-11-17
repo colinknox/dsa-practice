@@ -1,12 +1,14 @@
 def is_palindrome(word):
+    original_word = word.copy()
     if len(word) == 0:
         return word
-    return is_palindrome(word[1:]) + word[0]
+    
 
-print(is_palindrome("limosss"))
-# assert is_palindrome("limosss") == False
-# assert is_palindrome("ram") == False
-# assert is_palindrome("madam") == True
-# assert is_palindrome("tattarrattat") == True
-# assert is_palindrome("") == True
-# print("All tests successful.")
+
+assert is_palindrome("") == True
+assert is_palindrome("a") == True
+assert is_palindrome("abba") == True
+assert is_palindrome("racecar") == True
+assert is_palindrome("ab") == False
+assert is_palindrome("abca") == False
+print("All palindrome tests passed!")
